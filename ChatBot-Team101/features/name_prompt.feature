@@ -5,4 +5,4 @@ Feature: Prompt a user for their name
 	
 Scenario: Verify the prompt shows up
 	Given the application is running
-	Then I should see "What is your name?"
+	Then the output should contain "What is your name?"
