@@ -18,3 +18,8 @@ Feature: Prompt a user to select a game
 				Given the application is running
 				When I type "5"
 				Then the output should contain "BOOM!"
+				
+		Scenario: Verify Other Games Refuse to Launch
+				Given the application is running
+				When I type ""
+				Then the output should contain "Wrong Choice Foo!"
