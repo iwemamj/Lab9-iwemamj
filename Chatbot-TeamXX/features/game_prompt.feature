@@ -13,3 +13,8 @@ Feature: Prompt a user to select a game
 				And the output should contain "Axis & Allies"
 				And the output should contain "Global Thermonuclear War"
 				Then the output should contain "Choose a game"
+				
+		Scenario: Verify Global Thermonuclear War blows-up
+				Given the application is running
+				When I type "5"
+				Then the output should contain "BOOM!"

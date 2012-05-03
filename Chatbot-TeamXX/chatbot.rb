@@ -13,3 +13,4 @@ puts "5. Global Thermonuclear War"
 puts "Chose! Choose a game number:"
 
 
+puts (userIn == "5" ? "BOOM!" : "Wrong Choice Foo!")
